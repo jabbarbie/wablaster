@@ -1,0 +1,26 @@
+extends layout
+
+block content
+ div(class='row mb-2')
+  div(class='col-sm-12')
+   div(class='card')
+    h6(class='card-header') Pengaturan  
+    div(class='card-body')
+
+     form(method='post', id='formpengaturan')
+
+     div(class='form-group row')
+      label(class='form-control-label col-sm-2') Jeda Pesan
+      div(class='col-sm-3')
+       input(type='number', name='jeda', class='form-control', min='1')
+       small(class='text-warning') *Hitungan Detik 
+
+     div(class='form-group row')
+      label(class='form-control-label col-sm-2') Jumlah Server 
+      div(class='col-sm-1')
+       input(type='number', name='jumlah_server',class='form-control', min='1')
+
+     div(class='form-group row')
+      div(class='col-sm-2') &nbsp
+      div(class='col-sm-1')
+       input(type='submit', value='Simpan', class='btn btn-primary btn-sm')

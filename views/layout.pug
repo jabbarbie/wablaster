@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title WebBlasterX
+    link(rel='stylesheet', href='/stylesheets/sb-admin-2.css')
+    link(rel='stylesheet', href='/plugins/quill/quill.snow.css')
+    link(rel='stylesheet', href='/stylesheets/datatables.min.css')
+    link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css')
+    link(rel='stylesheet', href='/stylesheets/quill-emoji.css')
+
+
+
+  body
+  div(id='wrapper')
+   include ./menu.pug
+
+   div(id='content-wrapper', class='d-flex flex-column')
+    include ./header.pug
+    div(class='container-fluid px-3')
+
+     block content
+
+  include ./js.pug
+
